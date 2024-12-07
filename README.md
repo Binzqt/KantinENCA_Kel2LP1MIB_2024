@@ -1,1 +1,16 @@
 # KantinENCA_Kel2LP1MIB_2024
+
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
