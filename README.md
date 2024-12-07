@@ -1,6 +1,6 @@
 # KantinENCA_Kel2LP1MIB_2024
 
-![alt text](?raw=true)
+![alt text](https://github.com/Binzqt/KantinENCA_Kel2LP1MIB_2024/blob/main/Gambar%20WhatsApp%202024-12-04%20pukul%2008.53.01_ed01ac6b.jpg?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
