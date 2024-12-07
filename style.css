@@ -1,0 +1,369 @@
+body {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-04\ pukul\ 08.53.01_ed01ac6b.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0; /* Mengurangi padding atas dan bawah */
+}
+
+h2,
+h3 {
+  margin: 0;
+  padding: 0.15em 0;
+}
+
+main {
+  padding: 1em;
+}
+
+.makanan {
+  margin-left: 148px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.card-container div img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.card-container div:hover {
+  transition: transform 0.5s, border-color 0.5s;
+  transform: scale(1.05); /* Kartu mengembang sedikit saat hover */
+  border-color: #4caf50; /* Garis pinggir berubah warna menjadi hijau */
+}
+
+.card-miayam {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-markari {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-migoreng {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.32.49_cae52117.jpg);
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-nasigoreng {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-mietumis {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-ayamgeprek {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-sosisbakso {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.36.56_f248204c.jpg);
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+
+.card-jusbuah {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-cappucino {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.32.47_3ad05f1e.jpg);
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-bengbeng {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.32.41_985fdf88.jpg);
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-popice {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-nutrisari {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-milo {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-tehsisri {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+.card-teajus {
+  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
+  background-position: center; /* Agar gambar tetap terpusat */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-color: #4caf50;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.count {
+  margin-left: 0.5em;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.order-now {
+  width: 100%; /* Membuat tombol memanjang penuh */
+  padding: 0.4em 1.5em; /* Padding vertikal dan horizontal untuk ukuran tombol */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 1.2em; /* Ukuran teks tombol */
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+  text-align: center; /* Menyelaraskan teks di tengah */
+  box-sizing: border-box; /* Menghindari padding menyebabkan tombol melebihi ukuran */
+  margin-top: 20px; /* Memberikan jarak antara tombol dan konten di atasnya */
+}
+
+.order-now:hover {
+  background-color: #45a049;
+}
+.scroll-to-bottom {
+  position: fixed;
+  bottom: 20px; /* Menempatkan tombol 20px dari bagian bawah layar */
+  right: 20px; /* Menempatkan tombol 20px dari sisi kanan layar */
+  background-color: #2196f3; /* Warna tombol biru */
+  color: white;
+  padding: 1em; /* Memberikan ruang di dalam tombol */
+  border: none;
+  font-size: 1.5em; /* Ukuran font untuk tombol */
+  cursor: pointer;
+  border-radius: 50%; /* Membuat tombol berbentuk bulat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Lebar tombol */
+  height: 60px; /* Tinggi tombol */
+}
+
+.scroll-to-bottom:hover {
+  background-color: #0b7dda; /* Warna saat hover */
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin ENCA | Sungai Sahang</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>Kantin ENCA</h2>
+        <h3>Jl. Sungai Sahang depan Kampus Manajemen Informatika & Bahasa Inggris Politeknik Negeri Sriwijaya</h3>
+    </header>
+
+    <section>
+        <h2 class="makanan">Bagian Makanan</h2>
+
+        <!-- Tombol Scroll ke Bawah -->
+        <button class="scroll-to-bottom" onclick="scrollToBottom()">↓</button>
+
+        <div class="card-container">
+            <div class="card-miayam">
+                <p>Mie Ayam (Rp 10.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('miayam')">-</button>
+                    <span id="miayam" class="count">0</span>
+                    <button type="button" onclick="increment('miayam')">+</button>
+                </div>
+            </div>
+            <div class="card-markari">
+                <p>Martabak Kari (Rp 10.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('markari')">-</button>
+                    <span id="markari" class="count">0</span>
+                    <button type="button" onclick="increment('markari')">+</button>
+                </div>
+            </div>
+            <div class="card-migoreng">
+                <p>Mie Goreng Spesial (Rp 8.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('migoreng')">-</button>
+                    <span id="migoreng" class="count">0</span>
+                    <button type="button" onclick="increment('migoreng')">+</button>
+                </div>
+            </div>
+            <div class="card-nasigoreng">
+                <p>Nasi Goreng (Rp 10.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('nasigoreng')">-</button>
+                    <span id="nasigoreng" class="count">0</span>
+                    <button type="button" onclick="increment('nasigoreng')">+</button>
+                </div>
+            </div>
+            <div class="card-mietumis">
+                <p>Mie Tumis (Rp 10.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('mietumis')">-</button>
+                    <span id="mietumis" class="count">0</span>
+                    <button type="button" onclick="increment('mietumis')">+</button>
+                </div>
+            </div>
+            <div class="card-ayamgeprek">
+                <p>Nasi Ayam Geprek (Rp 10.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('ayamgeprek')">-</button>
+                    <span id="ayamgeprek" class="count">0</span>
+                    <button type="button" onclick="increment('ayamgeprek')">+</button>
+                </div>
+            </div>
+            <div class="card-sosisbakso">
+                <p>Sosis/Bakso (Rp 1.000)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('sosisbakso')">-</button>
+                    <span id="sosisbakso" class="count">0</span>
+                    <button type="button" onclick="increment('sosisbakso')">+</button>
+                </div>
+            </div>
+        </div>
+
+    <section>
+        <h2 class="makanan">Bagian Minuman</h2>
+        <div class="card-container">
+            <div class="card-jusbuah">
+                <p>Jus Buah (5rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('jusbuah')">-</button>
+                    <span id="jusbuah" class="count">0</span>
+                    <button type="button" onclick="increment('jusbuah')">+</button>
+                </div>
+            </div>
+            <div class="card-cappucino">
+                <p>Cappucino (5rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('cappucino')">-</button>
+                    <span id="cappucino" class="count">0</span>
+                    <button type="button" onclick="increment('cappucino')">+</button>
+                </div>
+            </div>
+            <div class="card-bengbeng">
+                <p>Bengbeng (5rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('bengbeng')">-</button>
+                    <span id="bengbeng" class="count">0</span>
+                    <button type="button" onclick="increment('bengbeng')">+</button>
+                </div>
+            </div>
+            <div class="card-popice">
+                <p>Pop Ice (5rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('popice')">-</button>
+                    <span id="popice" class="count">0</span>
+                    <button type="button" onclick="increment('popice')">+</button>
+                </div>
+            </div>
+            <div class="card-nutrisari">
+                <p>Nutrisari (4rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('nutrisari')">-</button>
+                    <span id="nutrisari" class="count">0</span>
+                    <button type="button" onclick="increment('nutrisari')">+</button>
+                </div>
+            </div>
+            <div class="card-milo">
+                <p>Milo (5rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('milo')">-</button>
+                    <span id="milo" class="count">0</span>
+                    <button type="button" onclick="increment('milo')">+</button>
+                </div>
+            </div>
+            <div class="card-tehsisri">
+                <p>Teh Sisri (2rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('tehsisri')">-</button>
+                    <span id="tehsisri" class="count">0</span>
+                    <button type="button" onclick="increment('tehsisri')">+</button>
+                </div>
+            </div>
+            <div class="card-teajus">
+                <p>Teajus (2rb)</p>
+                <div class="button-container">
+                    <button type="button" onclick="decrement('teajus')">-</button>
+                    <span id="teajus" class="count">0</span>
+                    <button type="button" onclick="increment('teajus')">+</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="total-price">
+            <p>Total Harga: <span id="total-harga">Rp 0</span></p>
+        </div>
+        <!-- Tombol Pesan Sekarang -->
+        <button type="button" class="order-now" onclick="submitOrder()">Pesan Sekarang</button>
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
