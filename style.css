@@ -32,6 +32,14 @@ main {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .makanan {
+    margin-left: 20px;  /* Menyesuaikan margin untuk layar kecil */
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
