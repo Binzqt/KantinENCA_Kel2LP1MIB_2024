@@ -141,6 +141,7 @@ main {
   position: relative;
 }
 .card-ayamgeprek {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 09.24.20_37b6a5ad.jpg);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -225,6 +226,7 @@ main {
   position: relative;
 }
 .card-popice {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 10.11.57_3a16cd59.jpg);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -273,6 +275,7 @@ main {
   position: relative;
 }
 .card-tehsisri {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 10.11.56_701045d4.jpg);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -289,6 +292,7 @@ main {
   position: relative;
 }
 .card-teajus {
+  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 10.11.56_fbe6160a.jpg);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
