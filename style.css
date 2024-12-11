@@ -59,11 +59,6 @@ nav ul li a:hover {
   background-color: #b71c1c;
 }
 
-h2,
-h3 {
-  margin: 0;
-  padding: 0.15em 0;
-}
 
 main {
   padding: 1em;
@@ -518,22 +513,41 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    margin-left: 20px;
+  }
+  .cete {
+    display: none;
+  }
+  .cta-buttons {
+    display: none;
+  }
+  .logo {
+    margin-left: -35px;
+  }
+
+  .price-and-buttons {
+    gap: 20px;
+  }
+  .total-price p {
+    margin-left: 4px;
+  }
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
   }
-   .footer-links {
-    margin-left: 50px;
-  }
-  .footer-social {
-    margin-left: 50px;
-  }
+
   .footer-links,
   .footer-social {
     margin-top: 10px;
   }
-
+  .footer-links {
+    margin-left: 40px;
+  }
+  .footer-social {
+    margin-left: 40px;
+  }
   .footer-logo {
     margin-bottom: 10px;
   }
