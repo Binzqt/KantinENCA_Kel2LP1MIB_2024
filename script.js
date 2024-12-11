@@ -101,3 +101,13 @@ function submitOrder() {
 function scrollToBottom() {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }
+function resetOrder() {
+  // Ambil semua elemen dengan class 'count'
+  const counts = document.querySelectorAll(".count");
+  counts.forEach((count) => {
+    count.textContent = "0"; // Setel ulang jumlah ke nol
+  });
+
+  // Reset total harga
+  document.getElementById("total-harga").textContent = "Rp 0";
+}
