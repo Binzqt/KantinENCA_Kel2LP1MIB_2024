@@ -1,19 +1,62 @@
 body {
-  backgroun-image: url(Gambar\ WhatsApp\ 2024-12-04\ pukul\ 08.53.01_ed01ac6b.jpg);
+  background-color: #f8f9fa;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #212529;
 }
 
 header {
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  padding: 0.5em 0; /* Mengurangi padding atas dan bawah */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d92323;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: #b71c1c;
+}
+
+.cta-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.cta-buttons .signup {
+  background-color: #d92323;
+  color: #fff;
+}
+
+.cta-buttons .signup:hover {
+  background-color: #b71c1c;
 }
 
 h2,
@@ -25,16 +68,20 @@ h3 {
 main {
   padding: 1em;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 .makanan {
   margin-left: 148px;
   margin-bottom: 15px;
   margin-top: 10px;
+  font-family: mont;
+  color: chocolate;
+  font-size: 38px;
+  letter-spacing: 8px;
 }
 
 @media screen and (max-width: 768px) {
   .makanan {
-    margin-left: 20px;  /* Menyesuaikan margin untuk layar kecil */
+    margin-left: 20px; /* Menyesuaikan margin untuk layar kecil */
     margin-bottom: 10px;
     margin-top: 5px;
   }
@@ -56,10 +103,11 @@ main {
 .card-container div:hover {
   transition: transform 0.5s, border-color 0.5s;
   transform: scale(1.05); /* Kartu mengembang sedikit saat hover */
-  border-color: #4caf50; /* Garis pinggir berubah warna menjadi hijau */
+  border-color: #d92323; /* Garis pinggir berubah warna menjadi hijau */
 }
 
 .card-miayam {
+  background-image: url(mie\ ayam.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -76,6 +124,7 @@ main {
   position: relative;
 }
 .card-markari {
+  background-image: url(martabak\ kari.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -92,7 +141,7 @@ main {
   position: relative;
 }
 .card-migoreng {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.32.49_cae52117.jpg);
+  background-image: url(mie\ goreng\ special.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -109,6 +158,7 @@ main {
   position: relative;
 }
 .card-nasigoreng {
+  background-image: url(nasi\ goreng.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -125,6 +175,7 @@ main {
   position: relative;
 }
 .card-mietumis {
+  background-image: url(mie\ tumis.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -141,7 +192,7 @@ main {
   position: relative;
 }
 .card-ayamgeprek {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 09.24.20_37b6a5ad.jpg);
+  background-image: url(nasi\ ayam\ geprek.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -158,7 +209,7 @@ main {
   position: relative;
 }
 .card-sosisbakso {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.36.56_f248204c.jpg);
+  background-image: url(aneka\ sosis.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -176,6 +227,7 @@ main {
 }
 
 .card-jusbuah {
+  background-image: url(Kantin.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -192,7 +244,7 @@ main {
   position: relative;
 }
 .card-cappucino {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.32.47_3ad05f1e.jpg);
+  background-image: url(good\ day.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -209,7 +261,7 @@ main {
   position: relative;
 }
 .card-bengbeng {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-05\ pukul\ 09.32.41_985fdf88.jpg);
+  background-image: url(beng\ beng.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -226,7 +278,7 @@ main {
   position: relative;
 }
 .card-popice {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 10.11.57_3a16cd59.jpg);
+  background-image: url(pop\ ice.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -243,6 +295,7 @@ main {
   position: relative;
 }
 .card-nutrisari {
+  background-image: url(nutrisari.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -259,6 +312,7 @@ main {
   position: relative;
 }
 .card-milo {
+  background-image: url(teh\ tarik.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -275,7 +329,7 @@ main {
   position: relative;
 }
 .card-tehsisri {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 10.11.56_701045d4.jpg);
+  background-image: url(teh\ sisri.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -292,7 +346,7 @@ main {
   position: relative;
 }
 .card-teajus {
-  background-image: url(Gambar\ WhatsApp\ 2024-12-09\ pukul\ 10.11.56_fbe6160a.jpg);
+  background-image: url(teajus.png);
   background-size: cover; /* Agar gambar memenuhi seluruh kartu */
   background-position: center; /* Agar gambar tetap terpusat */
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
@@ -337,32 +391,57 @@ button:hover {
 .count {
   margin-left: 0.5em;
   font-weight: bold;
-  color: #f8f9fa;
+  color: #212529;
+}
+.price-and-buttons {
+  display: flex; /* Menggunakan Flexbox */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  justify-content: space-between; /* Menempatkan elemen di ujung kiri dan kanan */
+  margin-top: 20px;
+  padding: 10px 20px; /* Opsional, memberi ruang */
+  background-color: #f9f9f9; /* Latar belakang ringan untuk pembeda */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
 }
 
+.total-price p {
+  margin: 0; /* Menghilangkan margin default */
+  font-size: 18px; /* Ukuran font yang lebih besar */
+  font-weight: bold;
+  margin-left: 130px;
+}
+
+.buttons-container {
+  display: flex; /* Membuat tombol sejajar */
+  gap: 10px; /* Memberi jarak antar tombol */
+  margin-right: 59%;
+}
+
+.reset-order,
 .order-now {
-  width: 100%; /* Membuat tombol memanjang penuh */
-  padding: 0.4em 1.5em; /* Padding vertikal dan horizontal untuk ukuran tombol */
-  background-color: #4caf50;
-  color: white;
+  background-color: #d92323;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
   border: none;
-  font-size: 1.2em; /* Ukuran teks tombol */
   cursor: pointer;
-  border-radius: 8px;
-  display: block;
-  text-align: center; /* Menyelaraskan teks di tengah */
-  box-sizing: border-box; /* Menghindari padding menyebabkan tombol melebihi ukuran */
-  margin-top: 20px; /* Memberikan jarak antara tombol dan konten di atasnya */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effects */
+.reset-order:hover {
+  background-color: #b71c1c;
 }
 
 .order-now:hover {
-  background-color: #45a049;
+  background-color: #b71c1c;
 }
+
 .scroll-to-bottom {
   position: fixed;
   bottom: 20px; /* Menempatkan tombol 20px dari bagian bawah layar */
   right: 20px; /* Menempatkan tombol 20px dari sisi kanan layar */
-  background-color: #2196f3; /* Warna tombol biru */
+  background-color: #d92323;
   color: white;
   padding: 1em; /* Memberikan ruang di dalam tombol */
   border: none;
@@ -377,5 +456,80 @@ button:hover {
 }
 
 .scroll-to-bottom:hover {
-  background-color: #0b7dda; /* Warna saat hover */
+  background-color: #b71c1c;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f8f8f8;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  margin-left: 37.5%;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #b71c1c;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #b71c1c;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links,
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
 }
