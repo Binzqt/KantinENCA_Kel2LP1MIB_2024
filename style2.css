@@ -1,0 +1,77 @@
+body {
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logoibu {
+  width: 50px;
+  height: 50px;
+}
+.logo {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d92323;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.navuli {
+  margin-left: 45.5%;
+}
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  margin-left: 8px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: #b71c1c;
+}
+.cta-buttons {
+  margin-left: 10px;
+}
+.cta-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.cta-buttons .signup {
+  background-color: #d92323;
+  color: #fff;
+}
+
+.cta-buttons .signup:hover {
+  background-color: #b71c1c;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+.judul,.judol {
+    text-align: center;
+    font-size: 40px;
+    color: chocolate;
+    font-family:bow ;
+    letter-spacing: 3px;
+}
