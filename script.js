@@ -1,42 +1,40 @@
 function scrollToBottom() {
   window.scrollTo({
-    top: document.body.scrollHeight, // Scroll ke bagian paling bawah
-    behavior: "smooth", // Smooth scrolling
+    top: document.body.scrollHeight, 
+    behavior: "smooth", 
   });
 }
 const prices = {
-  miayam: 10000,
-  markari: 10000,
-  migoreng: 8000,
-  nasigoreng: 10000,
-  mietumis: 10000,
-  ayamgeprek: 10000,
-  sosisbakso: 1000,
-  esjeruk: 5000,
+  mie_Ayam: 10000,
+  martabak_Kari: 10000,
+  mie_Goreng: 8000,
+  nasi_Goreng: 10000,
+  mie_Tumis: 10000,
+  nasi_AyamGeprek: 10000,
+  sosis_Bakso: 1000,
+  es_Jeruk: 5000,
   cappucino: 5000,
   bengbeng: 5000,
-  popice: 5000,
+  pop_Ice: 5000,
   nutrisari: 4000,
   milo: 5000,
-  tehsisri: 2000,
+  teh_Sisri: 2000,
   teajus: 2000,
-  jusmangga: 5000,
-  jusnaga: 5000,
-  jusapel: 5000,
-  juspir: 5000,
-  jusalpukat: 5000,
+  jus_Mangga: 5000,
+  jus_BuahNaga: 5000,
+  jus_Apel: 5000,
+  jus_Pir: 5000,
+  jus_Alpukat: 5000,
 };
 
-// Function to increment the count
 function increment(id) {
   const countElement = document.getElementById(id);
   let count = parseInt(countElement.textContent, 10);
   count++;
   countElement.textContent = count;
-  updateTotal(); // Update total price
+  updateTotal(); 
 }
 
-// Function to decrement the count
 function decrement(id) {
   const countElement = document.getElementById(id);
   let count = parseInt(countElement.textContent, 10);
@@ -44,10 +42,10 @@ function decrement(id) {
     count--;
     countElement.textContent = count;
   }
-  updateTotal(); // Update total price
+  updateTotal(); 
 }
 
-// Function to calculate total price
+
 function updateTotal() {
   let total = 0;
   for (let item in prices) {
@@ -58,7 +56,7 @@ function updateTotal() {
     "Rp " + total.toLocaleString();
 }
 
-// Function to reset order
+
 function resetOrder() {
   const counts = document.querySelectorAll(".count");
   counts.forEach((count) => {
@@ -69,7 +67,6 @@ function resetOrder() {
   document.getElementById("output").innerText = "";
 }
 
-// Function to submit the order
 function submitOrder() {
   let orderDetails = "";
   let total = 0;
@@ -104,10 +101,8 @@ function submitOrder() {
   let orderDetails = "";
   let total = 0;
 
-  // Mengambil pilihan pengantaran
   const deliveryOption = document.getElementById("deliveryOption").value;
 
-  // Menghitung total pesanan
   for (let item in prices) {
     const quantity = parseInt(document.getElementById(item).textContent, 10);
     if (quantity > 0) {
@@ -118,12 +113,10 @@ function submitOrder() {
     }
   }
 
-  // Mengambil catatan dari textarea (jika ada)
   const catatan =
     document.getElementById("catatanPembeli")?.value.trim() ||
     "Tidak ada catatan";
 
-  // Menampilkan struk pesanan
   if (orderDetails) {
     const output = document.getElementById("output");
     output.style.display = "block";
