@@ -11,13 +11,17 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #fff;
+  background-color: #f8f8f8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.logoibu {
+  width: 50px;
+  height: 50px;
+}
 .logo {
+  margin-left: 10px;
   font-size: 24px;
   font-weight: bold;
   color: #d92323;
@@ -29,12 +33,15 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-
+.navuli {
+  margin-left: 46%;
+}
 nav ul li {
   display: inline;
 }
 
 nav ul li a {
+  margin-left: 8px;
   text-decoration: none;
   color: #333;
   font-size: 16px;
@@ -42,7 +49,9 @@ nav ul li a {
 nav ul li a:hover {
   color: #b71c1c;
 }
-
+.cta-buttons {
+  margin-left: 10px;
+}
 .cta-buttons a {
   text-decoration: none;
   padding: 10px 20px;
@@ -58,11 +67,17 @@ nav ul li a:hover {
 .cta-buttons .signup:hover {
   background-color: #b71c1c;
 }
-
-
+.namamakanan {
+  margin-left: 10%;
+  line-height: 2;
+}
+.cocics {
+  margin-left: 37.4%;
+}
 main {
   padding: 1em;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 .makanan {
   margin-left: 148px;
@@ -81,31 +96,31 @@ main {
     margin-top: 5px;
   }
 }
-
-.card-container {
+.card-group {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
   margin-bottom: 2em;
 }
-
-.card-container div img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.card-container div:hover {
-  transition: transform 0.5s, border-color 0.5s;
-  transform: scale(1.05); /* Kartu mengembang sedikit saat hover */
-  border-color: #d92323; /* Garis pinggir berubah warna menjadi hijau */
-}
-
-.card-miayam {
-  background-image: url(mie\ ayam.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+.card-miayam,
+.card-ayamgeprek,
+.card-markari,
+.card-mietumis,
+.card-migoreng,
+.card-nasigoreng,
+.card-sosisbakso,
+.card-esjeruk,
+.card-milo,
+.card-tehsisri,
+.card-teajus,
+.card-popice,
+.card-nutrisari,
+.card-cappucino,
+.card-bengbeng {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid #ddd;
   border-radius: 8px;
   flex: 1 1 calc(25% - 1em);
@@ -117,245 +132,58 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1em;
   position: relative;
+}
+
+.card-group div:hover {
+  transition: transform 0.5s, border-color 0.5s;
+  transform: scale(1.05);
+  border-color: #d92323;
+}
+.card-miayam {
+  background-image: url(mie\ ayam.png);
 }
 .card-markari {
   background-image: url(martabak\ kari.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-migoreng {
   background-image: url(mie\ goreng\ special.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-nasigoreng {
   background-image: url(nasi\ goreng.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-mietumis {
   background-image: url(mie\ tumis.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-ayamgeprek {
   background-image: url(nasi\ ayam\ geprek.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-sosisbakso {
   background-image: url(aneka\ sosis.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 
-.card-jusbuah {
+.card-esjeruk {
   background-image: url(Kantin.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-cappucino {
   background-image: url(good\ day.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-bengbeng {
   background-image: url(beng\ beng.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-popice {
   background-image: url(pop\ ice.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-nutrisari {
   background-image: url(nutrisari.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-milo {
   background-image: url(teh\ tarik.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-tehsisri {
   background-image: url(teh\ sisri.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 .card-teajus {
   background-image: url(teajus.png);
-  background-size: cover; /* Agar gambar memenuhi seluruh kartu */
-  background-position: center; /* Agar gambar tetap terpusat */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 calc(25% - 1em);
-  max-width: calc(25% - 1em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  position: relative;
 }
 
 .card:hover {
@@ -512,6 +340,140 @@ footer {
   margin-top: 15px;
 }
 
+.card-jusbuah select {
+  width: 37%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #ffffff;
+  color: #34495e;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-jusbuah select:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+  outline: none;
+}
+
+.card-jusbuah option {
+  background-color: #ffffff;
+  color: #34495e;
+  padding: 10px;
+}
+
+/* Untuk browser yang mendukung custom styling */
+.card-jusbuah select::-ms-expand {
+  display: none;
+}
+.pesan {
+  text-decoration: none;
+  color: white;
+}
+.catatan-fieldset {
+  border: 2px solid #e67e22;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px auto; /* Agar fieldset berada di tengah */
+  background-color: #fef9e7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Membatasi lebar fieldset menjadi 60% dari kontainer */
+  max-width: 600px; /* Membatasi lebar maksimum */
+  text-align: left;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+.catatan-fieldset legend {
+  letter-spacing: 2px;
+  font-family: mont;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e67e22;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.catatan-fieldset .catatan {
+  width: 96%;
+  min-height: 100px; /* Membuat input memanjang ke bawah */
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #f39c12;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #34495e;
+  resize: vertical; /* Memungkinkan pengguna untuk mengubah ukuran vertikal */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catatan-fieldset .catatan:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+  outline: none;
+}
+#output {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#output h3 {
+  color: #28a745;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+#output strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#output br {
+  line-height: 1.5;
+}
+.cod {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 590px;
+  margin: 0 auto;
+  border: 2px solid #f39c12;
+}
+
+.cod label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.cod select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.cod select:focus {
+  border-color:  #e67e22;
+}
+
+.cod option {
+  padding: 10px;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   nav ul li a {
