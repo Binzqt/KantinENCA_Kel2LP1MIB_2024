@@ -23,7 +23,6 @@ const prices = {
   jus_Mangga: 5000,
   jus_BuahNaga: 5000,
   jus_Apel: 5000,
-  jus_Pir: 5000,
   jus_Alpukat: 5000,
 };
 
@@ -117,15 +116,24 @@ function submitOrder() {
     document.getElementById("catatanPembeli")?.value.trim() ||
     "Tidak ada catatan";
 
-  if (orderDetails) {
-    const output = document.getElementById("output");
-    output.style.display = "block";
-    output.innerHTML = `<h3>Pesanan Anda:</h3>${orderDetails}<strong>Total: Rp ${total.toLocaleString()}</strong><strong>Catatan:</strong> ${catatan}<strong>Pengantaran:</strong> ${
+if (orderDetails) {
+  const output = document.getElementById("output");
+  output.style.display = "block";
+  output.innerHTML = `
+    <h3>Pesanan Anda:</h3>
+    ${orderDetails}
+    <strong>Total: Rp ${total.toLocaleString()}</strong>
+    <strong>Catatan:</strong> ${catatan}
+    <strong>Pengantaran:</strong> ${
       deliveryOption === "makan_di_tempat" ? "Makan di Tempat" : "Anter ke Lobi"
-    }`;
-    alert("Pesanan Anda telah berhasil dikirim!");
-  } else {
-    alert("Anda belum memilih produk!");
-  }
+    }
+    <p class="struk">
+  *Silakan mengirimkan struk ini ke nomor +6288286291706 di bagian contact.
+</p>`;
+  alert("Pesanan Anda telah berhasil dikirim!");
+} else {
+  alert("Anda belum memilih produk!");
+}
+
 }
 
