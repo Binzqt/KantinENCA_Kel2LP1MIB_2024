@@ -40,3 +40,22 @@
   transition: transform 0.5s, border-color 0.5s;
   transform: scale(1.05);
 }
+
+/* Mode HP */
+@media screen and (max-width: 768px) {
+  .navuli {
+    margin-left: 0px;
+  }
+  .cete {
+    display: none;
+  }
+  .cta-buttons {
+    display: none;
+  }
+  .logo {
+    margin-left: -35px;
+  }
+  .logoibu {
+    display: none;
+  }
+}
