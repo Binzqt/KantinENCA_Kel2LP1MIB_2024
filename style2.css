@@ -99,4 +99,7 @@ hr {
   .logoibu {
     display: none;
   }
+ .ctc {
+  margin-left: -19px;
+ }
 }
