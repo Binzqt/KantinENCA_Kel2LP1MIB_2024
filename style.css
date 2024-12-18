@@ -162,7 +162,7 @@ main {
 
 .card-group div:hover {
   transition: transform 0.5s, border-color 0.5s;
-  transform: scale(1.05);
+  transform: scale(1.03);
   border-color: #d92323;
 }
 .card-miayam {
