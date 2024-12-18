@@ -1,9 +1,11 @@
+// Fungsi untuk scroll ke bagian bawah halaman
 function scrollToBottom() {
   window.scrollTo({
-    top: document.body.scrollHeight, 
-    behavior: "smooth", 
+    top: document.body.scrollHeight,
+    behavior: "smooth",
   });
 }
+
 const prices = {
   mie_Ayam: 10000,
   martabak_Kari: 10000,
@@ -31,7 +33,7 @@ function increment(id) {
   let count = parseInt(countElement.textContent, 10);
   count++;
   countElement.textContent = count;
-  updateTotal(); 
+  updateTotal();
 }
 
 function decrement(id) {
@@ -41,20 +43,19 @@ function decrement(id) {
     count--;
     countElement.textContent = count;
   }
-  updateTotal(); 
+  updateTotal();
 }
-
 
 function updateTotal() {
   let total = 0;
   for (let item in prices) {
-    const quantity = parseInt(document.getElementById(item).textContent, 10);
+    const quantity =
+      parseInt(document.getElementById(item).textContent, 10) || 0;
     total += prices[item] * quantity;
   }
   document.getElementById("total-harga").textContent =
     "Rp " + total.toLocaleString();
 }
-
 
 function resetOrder() {
   const counts = document.querySelectorAll(".count");
@@ -71,7 +72,8 @@ function submitOrder() {
   let total = 0;
 
   for (let item in prices) {
-    const quantity = parseInt(document.getElementById(item).textContent, 10);
+    const quantity =
+      parseInt(document.getElementById(item).textContent, 10) || 0;
     if (quantity > 0) {
       orderDetails += `${
         item.charAt(0).toUpperCase() + item.slice(1)
@@ -80,60 +82,37 @@ function submitOrder() {
     }
   }
 
-  const catatan = document.getElementById("catatanPembeli").value.trim();
-  if (!catatan) {
-    alert("Mohon isi catatan sebelum memesan.");
+  const namaPembeli = document.getElementById("inputText")?.value.trim();
+  const catatan =
+    document.getElementById("catatanPembeli")?.value.trim() ||
+    "Tidak ada catatan";
+  const deliveryOption =
+    document.getElementById("deliveryOption")?.value || "makan_di_tempat";
+
+  if (!namaPembeli) {
+    alert("Nama pembeli tidak boleh kosong!");
     return;
   }
 
   if (orderDetails) {
-    document.getElementById(
-      "output"
-    ).innerHTML = `<h3>Pesanan Anda:</h3>${orderDetails}<br><strong>Total: Rp ${total.toLocaleString()}</strong><br><strong>Catatan:</strong> ${catatan}`;
+    const output = document.getElementById("output");
+    output.style.display = "block";
+    output.innerHTML = `
+      <h3>Pesanan Anda:</h3>
+      ${orderDetails}
+      <p><strong>Nama Pembeli:</strong> ${namaPembeli}</p>
+      <strong>Catatan:</strong> ${catatan}<br>
+      <strong>Pengantaran:</strong> ${
+        deliveryOption === "makan_di_tempat"
+          ? "Makan di Tempat"
+          : "Anter ke Lobi"
+      }
+      <strong>Total: Rp ${total.toLocaleString()}</strong>
+      <p class="struk">
+        *Silakan mengirimkan struk ini ke nomor +6288286291706 di bagian contact.
+      </p>`;
     alert("Pesanan Anda telah berhasil dikirim!");
   } else {
     alert("Anda belum memilih produk!");
   }
 }
-
-function submitOrder() {
-  let orderDetails = "";
-  let total = 0;
-
-  const deliveryOption = document.getElementById("deliveryOption").value;
-
-  for (let item in prices) {
-    const quantity = parseInt(document.getElementById(item).textContent, 10);
-    if (quantity > 0) {
-      orderDetails += `${
-        item.charAt(0).toUpperCase() + item.slice(1)
-      }: ${quantity} x Rp ${prices[item].toLocaleString()}<br>`;
-      total += prices[item] * quantity;
-    }
-  }
-
-  const catatan =
-    document.getElementById("catatanPembeli")?.value.trim() ||
-    "Tidak ada catatan";
-
-if (orderDetails) {
-  const output = document.getElementById("output");
-  output.style.display = "block";
-  output.innerHTML = `
-    <h3>Pesanan Anda:</h3>
-    ${orderDetails}
-    <strong>Total: Rp ${total.toLocaleString()}</strong>
-    <strong>Catatan:</strong> ${catatan}
-    <strong>Pengantaran:</strong> ${
-      deliveryOption === "makan_di_tempat" ? "Makan di Tempat" : "Anter ke Lobi"
-    }
-    <p class="struk">
-  *Silakan mengirimkan struk ini ke nomor +6288286291706 di bagian contact.
-</p>`;
-  alert("Pesanan Anda telah berhasil dikirim!");
-} else {
-  alert("Anda belum memilih produk!");
-}
-
-}
-
