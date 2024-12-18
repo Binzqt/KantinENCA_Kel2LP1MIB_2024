@@ -75,12 +75,18 @@ nav ul li a:hover {
     font-family:bow ;
     letter-spacing: 3px;
 }
-
+h2 {
+  margin-left: 12px;
+  color: #212529;
+}
+hr {
+  border: 1px solid chocolate;
+}
 /* Mode HP */
 @media screen and (max-width: 768px) {
   .navuli {
     margin-left: 0px;
-  }
+  }   
   .cete {
     display: none;
   }
