@@ -1,46 +1,3 @@
-.judol {
-  letter-spacing: 6px;
-}
-.container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.group {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 45px;
-}
-
-.card {
-  width: 135px;
-  height: 240px;
-  background-color: #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border: 2px solid chocolate;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.group div:hover {
-  transition: transform 0.5s, border-color 0.5s;
-  transform: scale(1.05);
-}
-
 /* Mode HP */
 @media screen and (max-width: 768px) {
   .navuli {
@@ -58,4 +15,19 @@
   .logoibu {
     display: none;
   }
+  .cts {
+    margin-left: -8px;
+  }
+  .foto-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.foto-container img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; 
+}
 }
