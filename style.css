@@ -34,7 +34,7 @@ nav ul {
   margin: 0;
 }
 .navuli {
-  margin-left: 46%;
+  margin-left: 40%;
 }
 nav ul li {
   display: inline;
@@ -70,12 +70,27 @@ nav ul li a:hover {
 .namamakanan {
   margin-left: 10%;
   line-height: 2;
+  color: #f8f9fa;
 }
 .cocics {
   margin-left: 37.4%;
+  color: #f8f9fa;
 }
 main {
   padding: 1em;
+}
+.welcom {
+  display: flex;
+  align-items: center;
+  padding: 75px;
+}
+
+.welcom-text h1 {
+  font-size: 48px;
+  color: #212529;
+}
+.welcom-image {
+  margin-left: 10%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
@@ -89,10 +104,10 @@ main {
   letter-spacing: 8px;
 }
 .makanan {
-  color: chocolate;
+  color: #f8f9fa;
 }
 .minuman {
-  color: #f8f9fa;
+  color: chocolate;
 }
 @media screen and (max-width: 768px) {
   .makanan {
@@ -138,10 +153,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 150px;
+  height: 350px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1em;
   position: relative;
+  border-radius: 8%;
 }
 
 .card-group div:hover {
@@ -225,7 +241,7 @@ main {
   right: 10px;
 }
 .cat {
-  margin-top: -180px;
+  margin-top: -140px;
 }
 button {
   background-color: #4caf50;
@@ -261,7 +277,17 @@ button:hover {
   font-weight: bold;
   margin-left: 130px;
 }
-
+.red {
+  color: #d92323;
+  font-style: italic;
+}
+#inputText {
+  margin-top: 1px;
+  height: 25px;
+  width: 200px;
+  border: 1px solid chocolate;
+  border-radius: 4px;
+}
 .buttons-container {
   display: flex;
   gap: 10px;
@@ -535,5 +561,36 @@ footer {
   }
   .jumbotron {
     margin-bottom: -40px;
+  }
+  .welcom-image {
+    display: none;
+  }
+  .card-miayam,
+  .card-ayamgeprek,
+  .card-markari,
+  .card-mietumis,
+  .card-migoreng,
+  .card-nasigoreng,
+  .card-sosisbakso,
+  .card-esjeruk,
+  .card-milo,
+  .card-tehsisri,
+  .card-teajus,
+  .card-popice,
+  .card-nutrisari,
+  .card-cappucino,
+  .card-bengbeng,
+  .card-jusmangga,
+  .card-jusbuahnaga,
+  .card-jusapel,
+  .card-juspir,
+  .card-jusalpukat {
+    height: 100px;
+  }
+  .namamakanan {
+    display: none;
+  }
+  .cocics {
+    display: none;
   }
 }
